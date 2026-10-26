@@ -253,8 +253,7 @@ function buildHtml(){
  var e=c.querySelector("#cEmail");e.textContent="";e.setAttribute("href","#");
  c.querySelector("#pwForm").setAttribute("hidden","");
  c.querySelector("#site-data").textContent=JSON.stringify(D).replace(/</g,"\u003c");
- return "<!DOCTYPE html>
-"+c.outerHTML;
+ return "<!DOCTYPE html>\n"+c.outerHTML;
 }
 function bar(t){$("barMsg").textContent=t}
 async function publish(){
